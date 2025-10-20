@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="bg-linear-to-tl from-[#95c0ff] to-[#cf9aff] text-white min-h-screen">
+  
+    <!-- Form -->
+    <section id="formSect" class="flex flex-col items-center w-full space-y-2">
+        <div class="flex flex-col items-center space-y-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl mt-10 px-6 py-3 shadow-md">
+            
+            <div class="flex flex-row items-center">
+                <h2 class="text-2xl font-extrabold bg-gradient-to-r from-[#d75cb4] to-[#7f58da] bg-clip-text text-transparent drop-shadow-lg tracking-wide">
+                    Create Your Smart Notes
+                </h2>
+            </div>
+    
+            <div class="flex flex-row items-center text-white">
+                <label for="" class="pl-6 px-3 py-2 border-2 border-purple-800 rounded-full focus-within:ring-2 focus-within:ring-blue-400">
+    
+                    <input type="text" id="userNoteName" placeholder="Enter note name" class="pr-2 text-[#ffff] placeholder-gray-200 focus:outline-none">
+                    <button id="createNoteBtn" class="bg-linear-to-tl from-[#571094] to-[#9418fd] px-6 py-2.5 rounded-full hover:cursor-pointer transition duration-500 ease-in-out hover:scale-95">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Create Notes
+                    </button>
+                    
+                </label>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="noteSect" class="flex flex-col items-center w-full space-y-4 mt-10">
+        
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
